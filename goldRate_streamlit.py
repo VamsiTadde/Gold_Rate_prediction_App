@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import sklearn
+from gold_Rate_pred_updated import predict
 
 # Load the saved model
 import pickle
