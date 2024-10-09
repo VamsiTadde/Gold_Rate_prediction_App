@@ -10,8 +10,8 @@ import pickle
 # with open('gold_rate_pred_updated.pkl', 'rb') as file:
     # model = pickle.load(file)
     
-model = pickle.load(open('/workspaces/Gold_Rate_prediction_App/gold_rate_pred_updated.pkl', 'rb'))
-
+model = pickle.load(open('./gold_rate_pred_updated.pkl', 'rb'))
+print(model)
 # Set the title of the Streamlit app
 st.title("Gold Rate Prediction App")
 
