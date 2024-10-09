@@ -2,14 +2,15 @@ import streamlit as st
 import pickle
 import numpy as np
 import sklearn
-from gold_Rate_pred_updated import predict
+
 
 # Load the saved model
 import pickle
 
-with open('gold_rate_pred_updated.pkl', 'rb') as file:
-    model = pickle.load(file)
-#model = pickle.load(open(r'C:\Users\Dell\VS Code Projects\Data Science\Machine_Learning\gold_rate_pred_updated.pkl', 'rb'))
+# with open('gold_rate_pred_updated.pkl', 'rb') as file:
+    # model = pickle.load(file)
+    
+model = pickle.load(open('/workspaces/Gold_Rate_prediction_App/gold_rate_pred_updated.pkl', 'rb'))
 
 # Set the title of the Streamlit app
 st.title("Gold Rate Prediction App")

@@ -6,7 +6,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import pickle
 
-dataset=pd.read_csv(r'D:\DATA SCIENCE\DATA_SETS_DOCS\Gold_Rate.csv')
+import matplotlib.pyplot as plt
+dataset=pd.read_csv(r'/workspaces/Gold_Rate_prediction_App/Gold_Rate.csv')
 
 x = dataset.iloc[:,:-1].values
 y = dataset.iloc[:,1].values
